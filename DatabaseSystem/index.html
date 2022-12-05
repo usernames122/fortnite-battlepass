@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Database Indexer</title>
+</head>
+<body>
+<script>
+var x = document.createElement("INPUT");
+var br = document.createElement("br");
+x.setAttribute("type", "text");
+document.body.appendChild(x);
+document.body.appendChild(br);
+function clicked() {
+var y = document.getElementById("frame");
+y.src = "Entries/".concat(x.value,"/entry.html");
+}
+x.addEventListener('change', clicked);
+</script>
+<iframe style="Width:50vw;Height:50vh;" src="Entries/entry.html" id="frame"></iframe>
+</body>
+</html>
